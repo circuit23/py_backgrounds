@@ -10,9 +10,9 @@ listSym = []
 
 
 def create_square(border, draw, randColor, element, size):
-    if (element == int(size / 2)):
+    if element == int(size / 2):
         draw.rectangle(border, randColor)
-    elif (len(listSym) == element + 1):
+    elif len(listSym) == element + 1:
         draw.rectangle(border, listSym.pop())
     else:
         listSym.append(randColor)
@@ -33,8 +33,8 @@ def create_invader(border, draw, size):
             botRightX = topLeftX + squareSize
             botRightY = topLeftY + squareSize
             create_square((topLeftX, topLeftY, botRightX, botRightY), draw, random.choice(randColors), element, size)
-            if (element == int(size / 2) or element == 0):
-                i *= -1;
+            if element == int(size / 2) or element == 0:
+                i *= -1
             element += i
 
 
