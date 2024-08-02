@@ -3,6 +3,11 @@ import sys
 
 from PIL import Image, ImageDraw
 
+# Run using the following command:
+# python spritething.py [SPRITE_DIMENSIONS] [NUMBER] [IMAGE_SIZE]
+# For example: python spritething.py 7 30 1900
+# SPRITE_DIMENSIONS needs to be an odd number for symmetry reasons.
+
 origDimension = 1500
 r = lambda: random.randint(50, 215)
 rc = lambda: (r(), r(), r())
