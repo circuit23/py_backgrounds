@@ -57,7 +57,7 @@ def main(size, invaders, imgSize):
             botRightY = topLeftY + invaderSize - padding
             create_invader((topLeftX, topLeftY, botRightX, botRightY), draw, size)
     origImage.save(
-        "Examples/Example-" + str(size) + "x" + str(size) + "-" + str(invaders) + "-" + str(imgSize) + ".jpg")
+        "Invaders/Invaders-" + str(size) + "x" + str(size) + "-" + str(invaders) + "-" + str(imgSize) + ".jpg")
 
 
 if __name__ == "__main__":
