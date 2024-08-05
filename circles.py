@@ -10,7 +10,7 @@ def create_circle(draw, xy, radius=10, fill=None, outline=None, width=1):
     draw.circle(xy, radius, fill=fill, outline=outline, width=width)
 
 
-def random_color():
+def random_color() -> (int, int, int):
     return random.randint(0, 255), random.randint(0, 255), random.randint(0, 255)
 
 
