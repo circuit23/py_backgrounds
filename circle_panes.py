@@ -22,6 +22,7 @@ def pane_location(screen_resolution) -> (int, int, int, int):
 def create_pane(pane_top_x, pane_top_y, pane_bottom_x, pane_bottom_y):
     # create a smaller rectangular image, random background color
     # fill the image with randomly colored circles
+    # place the rectangle somewhere within the original image using pane_location()
     pass
 
 
